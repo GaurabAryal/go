@@ -66,7 +66,6 @@ func runTool(cmd *base.Command, args []string) {
 		return
 	}
 	args[0] = toolPath // in case the tool wants to re-exec itself, e.g. cmd/dist
-	fmt.Println(toolPath)
 	toolCmd := &exec.Cmd{
 		Path:   toolPath,
 		Args:   args,
