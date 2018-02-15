@@ -36,6 +36,9 @@ Write out an HTML file instead of launching a web browser:
 Display coverage percentages to stdout for each function:
 	go tool cover -func=c.out
 
+Display coverage percentages to stdout for each file::
+        go tool cover -file=c.out
+
 Finally, to generate modified source code with coverage annotations
 (what go test -cover does):
 	go tool cover -mode=set -var=CoverageVariableName program.go
